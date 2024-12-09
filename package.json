@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "ios:init": "npx cap add ios",
+    "ios:build": "npm run build && npx cap sync && npx cap copy ios",
+    "ios:open": "npx cap open ios",
+    "generate-pwa-assets": "pwa-asset-generator public/icon.png public/icons --background '#ffffff' --splash-only --portrait-only --type png"
+  },
+  "dependencies": {
+    "@capacitor/cli": "^6.2.0",
+    "@capacitor/core": "^5.7.8",
+    "@capacitor/ios": "^5.7.8",
+    "@capacitor/splash-screen": "^5.0.8",
+    "@capacitor/status-bar": "^5.0.8",
+    "pwa-asset-generator": "^6.3.1",
+    "next": "13.5.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "framer-motion": "^11.0.8",
+    "@netlify/plugin-nextjs": "^4.41.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.1"
+  }
+}
